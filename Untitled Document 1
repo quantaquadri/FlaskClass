@@ -1,0 +1,26 @@
+from flask import flask
+app = Flask (__name__)
+
+@app.route ('/')
+def compliment_andrew():
+	return 'hello, beautiful!'
+
+
+
+//Sending Dynamic Data
+
+from flask import flask
+import random
+app = Flask (__name__)
+
+
+@app.route('/number_please')
+def number_please():
+	return "{}". format(random.randint(1,20))
+
+
+//Handling User Input
+
+@app.route('/<name>')
+def compliment_andrew(name):
+	return "hello, beautiful {}!".format(name)
